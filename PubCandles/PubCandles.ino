@@ -5,7 +5,7 @@
 #define NB_CHANNEL 6
 
 // Declare our NeoPixel strip object:
-Adafruit_NeoPixel neoPixel(LED_COUNT, 2, NEO_GRBW + NEO_KHZ800);
+Adafruit_NeoPixel neoPixel(LED_COUNT, 10, NEO_GRBW + NEO_KHZ800);
 uint32_t rgbcolors[NB_CHANNEL];
 
 uint8_t candleInt[CANDLE_TABLE_LENGTH] = { 40, 40,  40,  40,  40,  40,  40,  36,  41,  37,  37,  41,  43,  45,  42,  42,  43,  42,  41,  39,  40,  43,  43,  51,  52,  51,  47,  44,  47,  47,  51,  45,  46,  45,  48,  46,  55,  37,  55,  57,  48,  53,  49,  52,  49,  53,  48,  48,  40,  54,  43,  55,  35,  46,  48,  43,  48,  48,  46,  46,  42,  46,  45,  45,  46,  41,  48,  51,  49,  45,  45,  43,  41,  43,  43,  42,  44,  43,  43,  42,  41,  40,  40,  41,  45,  45,  44,  43,  40,  44,  42,  41,  40,  40,  40,  40,  40,  40,  40,  40};
