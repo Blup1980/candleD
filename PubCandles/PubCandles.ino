@@ -19,7 +19,12 @@ void setup() {
   indexes[3] = 5;
   indexes[4] = 20;
   indexes[5] = 30;
-  neoPixel.begin(); 
+  neoPixel.begin();
+
+
+  for (uint8_t i = 0; i < CANDLE_TABLE_LENGTH; i++ ) {
+    candleInt[i] = candleInt[i] * 4;
+  }
 }
 
 void loop() {
